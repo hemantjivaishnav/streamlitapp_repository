@@ -14,6 +14,7 @@ if file:
       
         shutil.copyfile(filepath,targetpath)
         df
+        st.stop()
         st.success("File Uploaded Successfully")
     else:
         st.warning("upload csv file only!!!!!")
