@@ -10,7 +10,7 @@ if file:
     if file.type=="text/csv":
         filepath = current_dir+"/"+file.name
         df = pd.read_csv(filepath)
-        targetpath = current_dir+"uploaded/"+file.name
+        targetpath = current_dir+"/"+"uploaded/"+file.name
         filepath
         targetpath
         st.stop()
