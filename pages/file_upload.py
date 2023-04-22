@@ -5,6 +5,8 @@ import os
 import shutil
 
 current_dir = os.getcwd()
+current_dir
+st.stop()
 file = st.file_uploader('Select file')
 if file:
     if file.type=="text/csv":
