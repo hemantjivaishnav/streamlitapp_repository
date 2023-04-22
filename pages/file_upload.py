@@ -6,13 +6,13 @@ import shutil
 
 current_dir = os.getcwd()
 file = st.file_uploader('Select file')
-file
-st.stop()
 if file:
     if file.type=="text/csv":
         filepath = current_dir+"/"+file.name
         df = pd.read_csv(filepath)
-        targetpath = r"C:\Users\Hemant Vaishnav\Documents\django\uploaded/"+file.name
+        targetpath = current_dir+"uploaded/"+file.name
+        targerpath
+        st.stop()
         shutil.copyfile(filepath,targetpath)
         df
         st.success("File Uploaded Successfully")
