@@ -11,9 +11,7 @@ if file:
         filepath = current_dir+"/"+file.name
         df = pd.read_csv(filepath)
         targetpath = current_dir+"/"+"uploaded/"+file.name
-        filepath
-        targetpath
-        st.stop()
+       
         shutil.copyfile(filepath,targetpath)
        
         st.success("File Uploaded Successfully")
